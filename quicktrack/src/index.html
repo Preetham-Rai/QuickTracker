@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Quick Tracker</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+   
+    
+
+  <body>
+    <header>
+      <h1>Quick Tracker</h1>
+      <a class="nav-start" href="/index.html">Activity Tracker</a>
+    </header>
+    <h2 id="switch"></h2>
+    <form id="task-form">
+      <input
+        type="text"
+        name="task-input"
+        id="task-input"
+        placeholder="What are you working on?"
+      />
+      <input type="submit" id="task-submit" value="Add Task" />
+    </form>
+    <main>
+      <section class="task-list">
+        <h2>Tasks</h2>
+        <div id="tasks">
+          <div class="task">
+            <div class="content">
+              <input type="text" class="text" value="A new task" readonly />
+            </div>
+            <div class="counter">
+              <div class="time">00:00:00</div>
+              <div class="controls">
+                <button class="start">Start</button>
+                <button class="stop">Stop</button>
+                <button class="reset">Reset</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
